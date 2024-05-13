@@ -37,7 +37,7 @@ class HasilJawaban:
         result_text = f"Quiz Berakhir!\n\nTotal Quiz: {self.total_quiz}\nJawaban Benar: {self.total_jawaban}\nJawaban Salah: {self.salah_jawab}"
         tk.Label(self.frame, text=result_text, font=("Helvetica", 14)).pack(pady=20)
         
-        tk.Button(self.frame, text="Back to Main Menu", command=self.back_to_main_menu).pack(pady=10)
+        tk.Button(self.frame, text="Kembali ke Main Menu", command=self.back_to_main_menu).pack(pady=10)
         tk.Button(self.frame, text="Exit", command=self.parent.quit).pack(pady=10)
 
     def back_to_main_menu(self):
@@ -133,19 +133,19 @@ class MathQuizApp:
         self.tutorial_label = tk.Label(self.tutorial_frame, text="Tutorial Mode", font=("Poppins", 16))
         self.tutorial_label.pack(pady=20)
 
-        tk.Label(self.tutorial_frame, text="Addition:", font=("Poppins", 14)).pack()
+        tk.Label(self.tutorial_frame, text="Penjumlahan:", font=("Poppins", 14)).pack()
         tk.Label(self.tutorial_frame, text="1 + 2 = 3", font=("Poppins", 14)).pack()
         
-        tk.Label(self.tutorial_frame, text="Subtraction:", font=("Poppins", 14)).pack()
+        tk.Label(self.tutorial_frame, text="Pengurangan:", font=("Poppins", 14)).pack()
         tk.Label(self.tutorial_frame, text="5 - 3 = 2", font=("Poppins", 14)).pack()
         
-        tk.Label(self.tutorial_frame, text="Multiplication:", font=("Poppins", 14)).pack()
+        tk.Label(self.tutorial_frame, text="Perkalian:", font=("Poppins", 14)).pack()
         tk.Label(self.tutorial_frame, text="4 * 3 = 4 + 4 + 4 = 16", font=("Poppins", 14)).pack()
         
-        tk.Label(self.tutorial_frame, text="Division:", font=("Poppins", 14)).pack()
+        tk.Label(self.tutorial_frame, text="Pembagian:", font=("Poppins", 14)).pack()
         tk.Label(self.tutorial_frame, text="10 / 2 = (2) + (2) + (2) + (2) + (2) = 5", font=("Poppins", 14)).pack()
 
-        tk.Button(self.tutorial_frame, text="Back to Main Menu", command=self.back_to_main_menu).pack(pady=10)
+        tk.Button(self.tutorial_frame, text="Kembali ke Main Menu", command=self.back_to_main_menu).pack(pady=10)
 
     def back_to_main_menu(self):
         self.tutorial_frame.destroy()
